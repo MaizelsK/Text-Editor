@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CopyCutPaste_Application"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="400" Width="450">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,0">
+            <Button Name="copyButton" Margin="20,0,0,0" Click="CopyButton_Click">Copy</Button>
+            <Button Name="pasteButton" Margin="20,0,0,0" Click="PasteButton_Click">Paste</Button>
+            <Button Name="cutButton" Margin="20,0,0,0" Click="CutButton_Click">Cut</Button>
+        </StackPanel>
+        <RichTextBox Name="text" DockPanel.Dock="Top" Margin="5" FontSize="14"/>
+    </DockPanel>
 </Window>
