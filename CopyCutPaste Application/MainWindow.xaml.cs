@@ -27,17 +27,17 @@ namespace CopyCutPaste_Application
 
         private void CopyButton_Click(object sender, RoutedEventArgs e)
         {
-            //Clipboard.SetText(text.Document., TextDataFormat.Text);
+            text.Copy();
         }
 
         private void PasteButton_Click(object sender, RoutedEventArgs e)
         {
-            //text.SelectedText = Clipboard.GetText();
+            text.Paste();
         }
 
         private void CutButton_Click(object sender, RoutedEventArgs e)
         {
-
+            text.Cut();
         }
     }
 }
